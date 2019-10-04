@@ -1,0 +1,33 @@
+{
+    "name": "phpbbstudio/nore",
+    "type": "phpbb-extension",
+    "description": "The extension removes the prefix - Re : - from posts and PMs in the Reply or Quote process.",
+    "homepage": "https://www.phpbbstudio.com",
+    "version": "1.0.1",
+    "time": "2019-09-21",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "phpBB Studio",
+            "email": "info@phpbbstudio.com",
+            "homepage": "https://www.phpbbstudio.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.7",
+        "composer/installers": "~1.0.0",
+        "phpbb/phpbb": ">=3.2.8-rc1,<4.0.0@dev"
+    },
+    "extra": {
+        "display-name": "No Re:",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.8-rc1,<4.0.0@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/nore",
+            "filename": "version_check"
+        }
+    }
+}
